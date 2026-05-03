@@ -148,3 +148,6 @@ body {
 @media (max-width: 640px) {
   .display-clamp { font-size: clamp(2.5rem, 12vw, 4rem); line-height: 0.95; }
 }
+.storefront-img {
+  transform: none !important;
+}
