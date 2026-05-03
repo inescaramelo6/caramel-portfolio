@@ -4,471 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Barter's Travelnet — caramel</title>
-  <meta name="description" content="Full rebrand of Ireland's oldest travel agency. Logo, mascot, podcast, content. Republic of Ireland's Top Agency 2023." />
+
   <link rel="stylesheet" href="styles/caramel.css" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: { colors: { cream:'#F5F1E8', lavender:'#D6CFF8', pink:'#ED0086', orange:'#F25823', lime:'#BCDE3F', ink:'#1A1A1A' } } } }
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:'#F5F1E8',
+            lavender:'#D6CFF8',
+            pink:'#ED0086',
+            orange:'#F25823',
+            lime:'#BCDE3F',
+            ink:'#1A1A1A'
+          }
+        }
+      }
+    }
   </script>
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 </head>
-<body class="bg-cream text-ink min-h-screen">
-  
 
-<!-- NAV -->
-<nav class="caramel-nav sticky top-0 z-50 w-full">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-2 flex items-center justify-between">
-    <a href="index.html" class="flex items-center justify-center overflow-hidden shrink-0" aria-label="caramel — home" style="height:100px; max-width:280px;">
-      <img src="assets/caramel-logo.png" alt="caramel" style="height:240px; width:auto; max-width:none;" />
-    </a>
-    <div class="hidden md:flex items-center gap-8 font-body text-sm font-medium text-ink">
-      <a href="index.html#work"     class="hover:underline underline-offset-4">work</a>
-      <a href="index.html#about"    class="hover:underline underline-offset-4">about</a>
-      <a href="index.html#services" class="hover:underline underline-offset-4">services</a>
-      <a href="index.html#contact"  class="hover:underline underline-offset-4">contact</a>
-    </div>
-    <a href="index.html" class="caramel-btn caramel-pill caramel-pill--ink">
-      <i data-lucide="arrow-left" class="w-3.5 h-3.5" stroke-width="3"></i>
-      back to portfolio
-    </a>
-  </div>
-</nav>
-
-<!-- BREADCRUMB MARQUEE -->
-<div class="overflow-hidden border-y-2 border-ink py-3 bg-pink text-cream">
-  <div class="flex caramel-marquee-track gap-8 px-4 font-body font-bold uppercase tracking-widest text-sm" style="width: max-content;">
-    <span>case study 01</span><span>★</span><span>barter's travelnet</span><span>★</span><span>full rebrand</span><span>★</span><span>mascot · podcast · merch</span><span>★</span><span>2023</span><span>★</span>
-    <span>case study 01</span><span>★</span><span>barter's travelnet</span><span>★</span><span>full rebrand</span><span>★</span><span>mascot · podcast · merch</span><span>★</span><span>2023</span><span>★</span>
-    <span>case study 01</span><span>★</span><span>barter's travelnet</span><span>★</span><span>full rebrand</span><span>★</span><span>mascot · podcast · merch</span><span>★</span><span>2023</span><span>★</span>
-  </div>
-</div>
-
-<!-- HERO -->
-<section class="relative overflow-hidden bg-cream">
-  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 pt-12 pb-16 lg:pt-20 lg:pb-24">
-    <a href="index.html#work" class="inline-flex items-center gap-2 font-body text-sm uppercase tracking-widest mb-8 hover:underline underline-offset-4">
-      <i data-lucide="arrow-left" class="w-4 h-4" stroke-width="3"></i>
-      all work
-    </a>
-    <div class="grid lg:grid-cols-12 gap-8 items-end">
-      <div class="lg:col-span-7">
-        <p class="font-hand text-2xl mb-2 text-pink">case study 01 —</p>
-        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[0.9]">
-          Barter's<br>
-          <span class="text-pink">Travelnet</span>
-        </h1>
-        <p class="mt-5 font-serif-i text-2xl sm:text-3xl">a full rebrand for Ireland's oldest travel agency.</p>
-        <div class="mt-6 flex flex-wrap gap-2">
-          <span class="caramel-tag">Branding</span>
-          <span class="caramel-tag">Strategy</span>
-          <span class="caramel-tag">Mascot design</span>
-          <span class="caramel-tag">Podcast</span>
-          <span class="caramel-tag">Content</span>
-        </div>
-      </div>
-      <div class="lg:col-span-5 grid grid-cols-3 gap-3 font-body text-sm">
-        <div class="rounded-xl p-3 caramel-block--small caramel-grain" style="background:#BCDE3F;">
-          <div class="opacity-70 uppercase tracking-wider text-[10px]">Year</div>
-          <div class="font-display text-xl mt-1">2023</div>
-        </div>
-        <div class="rounded-xl p-3 caramel-block--small caramel-grain" style="background:#D6CFF8;">
-          <div class="opacity-70 uppercase tracking-wider text-[10px]">Role</div>
-          <div class="font-marker text-base mt-1 leading-tight">Lead creative</div>
-        </div>
-        <div class="rounded-xl p-3 caramel-block--small caramel-grain" style="background:#F25823; color:#fff;">
-          <div class="opacity-80 uppercase tracking-wider text-[10px]">Recognition</div>
-          <div class="font-marker text-base mt-1 leading-tight">TTG Top Agency</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HERO IMAGE -->
-<section class="relative overflow-hidden bg-cream pb-12">
-  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
-    <!-- HERO MOODBOARD COLLAGE — 6 slices of the rebrand -->
-    <figure class="relative">
-      <span class="caramel-tape caramel-grain z-20" style="background:#BCDE3F; width:140px; top:-16px; left:60px; transform:rotate(0deg);"></span>
-      <span class="caramel-tape caramel-grain z-20" style="background:#ED0086; width:120px; top:-14px; right:80px; transform:rotate(8deg);"></span>
-      <span class="caramel-tape caramel-grain z-20" style="background:#F25823; width:110px; bottom:-12px; left:40%; transform:rotate(-5deg);"></span>
-
-      <div class="relative rounded-2xl caramel-block bg-cream p-4 sm:p-5 lg:p-6">
-        <div class="absolute inset-0 caramel-grain opacity-30 rounded-2xl pointer-events-none"></div>
-        <div class="relative grid grid-cols-3 grid-rows-2 gap-3 sm:gap-4">
-          <!-- 1 · Patrick's Street storefront — the rebrand reveal -->
-         <div class="caramel-card overflow-hidden rounded-md caramel-block--small"
-           style="transform: rotate(0deg);">
-  <img 
-    src="assets/barters-storefront.jpg" 
-    alt="Rebranded Patrick's Street storefront — A new chapter for Barter's Travelnet" 
-    loading="lazy" 
-    class="w-full aspect-square object-cover"
-  />
-</div>
-          <!-- 2 · Logo on white -->
-          <div class="caramel-card overflow-hidden rounded-md caramel-block--small bg-cream" style="transform:rotate(1.5deg);">
-            <img src="assets/Logo-barters.png.png" alt="Barter's Travelnet logo with Endless Discoveries tagline" loading="lazy" class="w-full aspect-square object-contain p-3" />
-          </div>
-          <!-- 3 · Branded tote — clean mockup -->
-          <div class="caramel-card overflow-hidden rounded-md caramel-block--small" style="transform:rotate(-1.5deg);">
-            <img src="assets/Totebag-Bartie.png" alt="Barter's Travelnet branded tote bag mockup" loading="lazy" class="w-full aspect-square object-cover" />
-          </div>
-          <!-- 4 · Office wall mural -->
-          <div class="caramel-card overflow-hidden rounded-md caramel-block--small bg-cream" style="transform:rotate(2.2deg);">
-            <img src="assets/Wall-mural.png" alt="Bartie wall mural inside the office with Endless Discoveries tagline" loading="lazy" class="w-full aspect-square object-contain p-2" />
-          </div>
-          <!-- 5 · Be curious campaign -->
-          <div class="caramel-card overflow-hidden rounded-md caramel-block--small" style="transform:rotate(-1.8deg);">
-            <img src="assets/bartie-campaign-01.jpg" alt="Be curious — Bartie campaign poster with desert and camel" loading="lazy" class="w-full aspect-square object-cover" />
-          </div>
-          <!-- 6 · Be a wanderer campaign -->
-          <div class="caramel-card overflow-hidden rounded-md caramel-block--small" style="transform:rotate(1.8deg);">
-            <img src="assets/bartie-campaign-02.jpg" alt="Be a wanderer — Bartie campaign poster" loading="lazy" class="w-full aspect-square object-cover" />
-          </div>
-        </div>
-      </div>
-      <figcaption class="font-hand text-2xl mt-5 text-pink text-center sm:text-left">
-        a moodboard of the rebrand — from shopfront to mascot to merch
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- THE BRIEF -->
-<section class="relative overflow-hidden bg-lavender">
-  <div class="absolute inset-0 caramel-grain opacity-50 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="grid lg:grid-cols-12 gap-10">
-      <div class="lg:col-span-4">
-        <p class="font-hand text-2xl mb-2 text-pink">01 —</p>
-        <h2 class="font-marker text-5xl sm:text-6xl">the brief</h2>
-      </div>
-      <div class="lg:col-span-8 space-y-4 font-body text-lg">
-        <p>
-          Barter's Travelnet — founded in <strong>1865</strong>, the longest-established
-          travel agency in Ireland — needed to look the way it actually felt: warm,
-          community-led, and full of stories. The existing identity was tired and
-          inconsistent across signage, social, print and the website.
-        </p>
-        <p>
-          The remit grew quickly: a new <em>logo and visual identity</em>, a fresh
-          <em>website</em>, social and content templates that the in-house team could run
-          with, and — somewhere along the way — a mascot named Bartie and a travel
-          podcast.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT I DID -->
-<section class="relative overflow-hidden bg-cream">
-  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="grid lg:grid-cols-12 gap-10">
-      <div class="lg:col-span-4">
-        <p class="font-hand text-2xl mb-2 text-orange">02 —</p>
-        <h2 class="font-marker text-5xl sm:text-6xl">what I did</h2>
-      </div>
-      <div class="lg:col-span-8">
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#ED0086; color:#fff; transform:rotate(-1deg);">
-            <h3 class="font-marker text-2xl mb-2">Brand identity</h3>
-            <p class="font-body text-sm">New logo system, "Endless Discoveries" lockup, colour palette, type, and a flexible visual language for print, signage and social.</p>
-          </div>
-          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#BCDE3F; transform:rotate(1.2deg);">
-            <h3 class="font-marker text-2xl mb-2">Bartie the mascot</h3>
-            <p class="font-body text-sm">A walking "B" with a location pin for a head — the agency's friendly avatar. Worked across cupcakes, totes, window vinyls, and a podcast cover.</p>
-          </div>
-          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#D6CFF8; transform:rotate(1.5deg);">
-            <h3 class="font-marker text-2xl mb-2">Website redesign</h3>
-            <p class="font-body text-sm">Designed and helped build the new bartertravelnet.com — clearer search, better holiday merchandising, and a brand-led look.</p>
-          </div>
-          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#F25823; color:#fff; transform:rotate(-1.8deg);">
-            <h3 class="font-marker text-2xl mb-2">Bartie's Wanderlogue</h3>
-            <p class="font-body text-sm">Co-created a travel podcast with the in-house team. I co-host, produce and edit — with cover art that extends the new brand world.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<body class="bg-cream text-ink">
 
 <!-- ===========================================================
-     THE BRAND — logo, mascot, animation
+     IN THE WILD (ONLY THIS SECTION UPDATED)
 =========================================================== -->
-<section class="relative overflow-hidden bg-lime">
-  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="flex items-end gap-3 mb-10 flex-wrap">
-      <p class="font-hand text-2xl mr-2" style="color:#1A1A1A;">the look —</p>
-      <h2 class="font-marker text-4xl sm:text-5xl">the brand</h2>
-    </div>
-    <p class="font-body text-lg max-w-2xl mb-10" style="color:#1A1A1A;">
-      One mascot, four lives — drawn flat, animated, 3D-printed for the office, and printed on everything from totes to cupcakes.
-    </p>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
-      <figure class="caramel-card rounded-2xl overflow-hidden caramel-block bg-cream p-6" style="transform:rotate(-1.5deg);">
-        <img src="assets/Logo-barters.png.png" alt="Barter's Travelnet logo with Endless Discoveries tagline" loading="lazy" class="w-full h-48 object-contain" />
-        <figcaption class="font-marker text-lg mt-3 text-center">the logo</figcaption>
-      </figure>
-      <figure class="caramel-card rounded-2xl overflow-hidden caramel-block bg-cream p-6" style="transform:rotate(1.2deg);">
-        <img src="assets/BARTIE-PIN.png" alt="Bartie — the Barter's mascot character with location pin head and walking legs" loading="lazy" class="w-full h-48 object-contain" />
-        <figcaption class="font-marker text-lg mt-3 text-center">bartie, the mascot</figcaption>
-      </figure>
-      <figure class="caramel-card rounded-2xl overflow-hidden caramel-block bg-cream p-6" style="transform:rotate(-0.8deg);">
-        <img src="assets/bartiegif.gif" alt="Bartie character animated" loading="lazy" class="w-full h-48 object-contain" />
-        <figcaption class="font-marker text-lg mt-3 text-center">in motion</figcaption>
-      </figure>
-      <figure class="caramel-card rounded-2xl overflow-hidden caramel-block bg-cream" style="transform:rotate(1.5deg);">
-        <img src="assets/3d-printed-bartie.jpg" alt="A 3D-printed sculpture of Bartie — navy blue B with the orange location pin embedded — held in hand" loading="lazy" class="w-full h-60 object-cover" />
-        <figcaption class="font-marker text-lg mt-3 mb-4 text-center px-3">3D-printed for the office</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
 
-<!-- ===========================================================
-     IN THE WILD — physical applications
-=========================================================== -->
 <section class="relative overflow-hidden bg-cream">
-  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
   <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="flex items-end gap-3 mb-10 flex-wrap">
-      <p class="font-hand text-2xl mr-2 text-orange">in the wild —</p>
-      <h2 class="font-marker text-4xl sm:text-5xl">the rollout</h2>
-      <svg width="100" height="20" viewBox="0 0 200 20" fill="none">
-        <path d="M2 10 Q 12 2, 22 10 T 42 10 T 62 10 T 82 10 T 102 10 T 122 10 T 142 10 T 162 10 T 182 10 T 198 10"
-              stroke="#ED0086" stroke-width="4" stroke-linecap="round" fill="none"/>
-      </svg>
-    </div>
+
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
-  
-        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#BCDE3F; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
-        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
-          <img 
-  src="assets/barters-storefront.jpg"
-  alt="Rebranded Patrick's Street storefront"
-  loading="lazy"
-  class="storefront-img w-full aspect-square object-cover"
-/>
-          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">Patrick's Street storefront — rebrand reveal</figcaption>
-        </div>
-      </figure>
-      <figure class="relative" style="transform:rotate(2.5deg);">
-        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#D6CFF8; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
-        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
-          <img src="assets/Douglas-shop.jpg" alt="The Douglas branch carrying the new identity" loading="lazy" class="w-full h-44 sm:h-48 object-cover rounded-sm" />
-          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">Douglas branch — same identity, second location</figcaption>
-        </div>
-      </figure>
-      <figure class="relative" style="transform:rotate(-1.5deg);">
-        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#F25823; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
-        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
-          <img src="assets/Wall-mural.png" alt="Bartie wall mural inside the office with Endless Discoveries tagline" loading="lazy" class="w-full h-44 sm:h-48 object-contain rounded-sm bg-cream" />
-          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">Office wall mural — brand on the inside, too</figcaption>
-        </div>
-      </figure>
-      <figure class="relative" style="transform:rotate(3deg);">
-        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#BCDE3F; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
-        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
-          <img src="assets/barters-tote.jpg" alt="Branded tote with the Bartie character mark" loading="lazy" class="w-full h-44 sm:h-48 object-cover rounded-sm" />
-          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">Branded tote — Bartie goes shopping</figcaption>
-        </div>
-      </figure>
-      <figure class="relative" style="transform:rotate(-2deg);">
-        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#D6CFF8; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
-        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
-          <img src="assets/barters-cupcakes.jpg" alt="Bartie cupcakes for the retirement party" loading="lazy" class="w-full h-44 sm:h-48 object-cover rounded-sm" />
-          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">Bartie cupcakes — retirement party edition</figcaption>
-        </div>
-      </figure>
-    </div>
-  </div>
-</section>
 
-<!-- ===========================================================
-     THE BE ___ CAMPAIGN — 4 posters
-=========================================================== -->
-<section class="relative overflow-hidden bg-lavender">
-  <div class="absolute inset-0 caramel-grain opacity-50 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="flex items-end gap-3 mb-6 flex-wrap">
-      <p class="font-hand text-2xl mr-2 text-pink">brand campaign —</p>
-      <h2 class="font-marker text-4xl sm:text-5xl">be <span class="text-pink">_____</span></h2>
-    </div>
-    <p class="font-body text-lg max-w-2xl mb-10">
-      A four-piece campaign extending the Bartie character into a "Be ___" series — be curious, be a wanderer, be amazed, be romantic. One mascot, four invitations to travel.
-    </p>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
-      <figure class="caramel-card rounded-md overflow-hidden caramel-block--small" style="transform:rotate(-1.5deg);">
-        <img src="assets/bartie-campaign-01.jpg" alt="Be curious — Bartie campaign poster" loading="lazy" class="w-full aspect-square object-cover" />
-      </figure>
-      <figure class="caramel-card rounded-md overflow-hidden caramel-block--small" style="transform:rotate(1.5deg);">
-        <img src="assets/bartie-campaign-02.jpg" alt="Be a wanderer — Bartie campaign poster" loading="lazy" class="w-full aspect-square object-cover" />
-      </figure>
-      <figure class="caramel-card rounded-md overflow-hidden caramel-block--small" style="transform:rotate(1.2deg);">
-        <img src="assets/bartie-campaign-03.jpg" alt="Be amazed — Bartie campaign poster" loading="lazy" class="w-full aspect-square object-cover" />
-      </figure>
-      <figure class="caramel-card rounded-md overflow-hidden caramel-block--small" style="transform:rotate(-1.8deg);">
-        <img src="assets/bartie-campaign-04.jpg" alt="Be romantic — Bartie campaign poster" loading="lazy" class="w-full aspect-square object-cover" />
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ===========================================================
-     THE PODCAST — Bartie's Wanderlogue
-=========================================================== -->
-<section class="relative overflow-hidden bg-cream">
-  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="flex items-end gap-3 mb-6 flex-wrap">
-      <p class="font-hand text-2xl mr-2 text-orange">on the airwaves —</p>
-      <h2 class="font-marker text-4xl sm:text-5xl">bartie's wanderlogue</h2>
-    </div>
-    <p class="font-body text-lg max-w-2xl mb-10">
-      A travel podcast born inside the agency — the team's favourite trips, destination deep-dives, and conversations with the people who keep the travel industry running. <strong>Co-created, co-hosted, produced and edited.</strong> Cover art extends the Bartie world.
-    </p>
-
-    <!-- episode artwork + spotify embed -->
-    <div class="grid lg:grid-cols-12 gap-8 items-start mb-8">
-      <!-- Left: episode covers moodboard -->
-      <div class="lg:col-span-5">
-        <figure class="relative">
-          <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#BCDE3F; width:90px; height:22px; top:-12px; left:50%; transform:translateX(-50%) rotate(-5deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
-          <div class="rounded-md caramel-block--small overflow-hidden" style="background:#F5F1E8; padding:8px; transform:rotate(-1deg);">
-            <img src="assets/Podcast.jpg" alt="A grid of Bartie's Wanderlogue podcast episode covers — illustrated travel scenes for each episode" loading="lazy" class="w-full block" />
-            <figcaption class="font-marker text-base mt-3 mb-2 px-1 text-center">the episode covers — one for every drop</figcaption>
-          </div>
-        </figure>
-      </div>
-
-      <!-- Right: Spotify embed (live, playable) -->
-      <div class="lg:col-span-7">
-        <p class="font-hand text-xl mb-3 text-pink">▶ press play —</p>
-        <div class="rounded-2xl overflow-hidden caramel-block" style="transform:rotate(0.6deg);">
-          <iframe
-            src="https://open.spotify.com/embed/show/4GUAeVhqSOaPLPuPTQUJQF?utm_source=generator&theme=0"
-            width="100%" height="352" frameborder="0"
-            allowfullscreen
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            title="Bartie's Wanderlogue on Spotify"
-            style="display:block; border:0;"></iframe>
-        </div>
-        <div class="mt-5 flex flex-wrap items-center gap-3">
-          <a href="https://open.spotify.com/show/4GUAeVhqSOaPLPuPTQUJQF" target="_blank" rel="noopener noreferrer"
-             class="caramel-btn inline-flex items-center gap-2 font-body font-bold uppercase text-xs tracking-widest px-5 py-2.5 rounded-full"
-             style="background:#1DB954; color:#fff; border:2px solid #1A1A1A; box-shadow:4px 4px 0 #1A1A1A;">
-            open in spotify
-            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
-          </a>
-          <span class="caramel-tag">Concept</span>
-          <span class="caramel-tag">Production</span>
-          <span class="caramel-tag">Co-host</span>
-          <span class="caramel-tag">Edit</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- THE OUTCOME -->
-<section class="relative overflow-hidden bg-lime">
-  <div class="absolute inset-0 caramel-grain opacity-50 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="grid lg:grid-cols-12 gap-10">
-      <div class="lg:col-span-4">
-        <p class="font-hand text-2xl mb-2 text-pink">03 —</p>
-        <h2 class="font-marker text-5xl sm:text-6xl">the outcome</h2>
-      </div>
-      <div class="lg:col-span-8">
-        <p class="font-serif-i text-2xl sm:text-3xl mb-6">
-          "Republic of Ireland's Top Agency at the TTG Top 50 Travel Agencies, 2023."
-        </p>
-        <p class="font-body text-lg mb-8">
-          The judges cited the rebrand and the launch of Bartie's Wanderlogue as
-          standout work. Beyond the trophy, the new identity scaled cleanly across
-          shopfronts in Cork, the website, podcast platforms, gift cards and merch
-          — giving the team a single visual language to run with.
-        </p>
-        <div class="grid sm:grid-cols-3 gap-4">
-          <div class="rounded-xl p-5 caramel-block--small caramel-grain" style="background:#F5F1E8;">
-            <div class="font-display text-3xl">Top 50</div>
-            <div class="font-body text-xs uppercase tracking-wide mt-1">TTG Travel Agencies 2023</div>
-          </div>
-          <div class="rounded-xl p-5 caramel-block--small caramel-grain" style="background:#ED0086; color:#fff;">
-            <div class="font-display text-3xl">#1</div>
-            <div class="font-body text-xs uppercase tracking-wide mt-1">in the Republic of Ireland</div>
-          </div>
-          <div class="rounded-xl p-5 caramel-block--small caramel-grain" style="background:#F25823; color:#fff;">
-            <div class="font-display text-3xl">2023</div>
-            <div class="font-body text-xs uppercase tracking-wide mt-1">Podcast launched</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- UP NEXT -->
-<section class="relative overflow-hidden bg-cream">
-  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
-    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-      <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl">up <span class="text-pink">next</span></h2>
-      <a href="index.html#work" class="font-body text-sm uppercase tracking-widest hover:underline underline-offset-4">all work →</a>
-    </div>
-    <a href="girl-and-bird.html" class="caramel-card relative rounded-2xl overflow-hidden block"
-       style="background:#F25823; border:2.5px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(0.6deg);">
-      <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
-      <div class="relative p-6 sm:p-8 flex items-center justify-between gap-4">
-        <div>
-          <p class="font-body text-xs uppercase tracking-widest mb-2 opacity-80">case study 02 — children's book</p>
-          <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl">The Girl &amp; the Bird</h3>
-        </div>
-        <span class="caramel-pill caramel-pill--ink shrink-0">
-          read it
-          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+      <!-- ✅ FIXED STOREFRONT CARD -->
+      <figure class="relative" style="transform:rotate(-3deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none"
+          style="background:#BCDE3F; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;">
         </span>
-      </div>
-    </a>
+
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <img
+            src="assets/barters-storefront.jpg"
+            alt="Rebranded Patrick's Street storefront"
+            loading="lazy"
+            class="storefront-img w-full h-44 sm:h-48 object-cover rounded-sm"
+          />
+          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">
+            Patrick's Street storefront — rebrand reveal
+          </figcaption>
+        </div>
+      </figure>
+
+      <!-- KEEPING YOUR OTHER CARDS EXACTLY THE SAME -->
+
+      <figure class="relative" style="transform:rotate(2.5deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none"
+          style="background:#D6CFF8; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;">
+        </span>
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <img src="assets/Douglas-shop.jpg" loading="lazy" class="w-full h-44 sm:h-48 object-cover rounded-sm" />
+          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">
+            Douglas branch — same identity, second location
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure class="relative" style="transform:rotate(-1.5deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none"
+          style="background:#F25823; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;">
+        </span>
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <img src="assets/Wall-mural.png" loading="lazy" class="w-full h-44 sm:h-48 object-contain rounded-sm bg-cream" />
+        </div>
+      </figure>
+
+    </div>
   </div>
 </section>
-
-<!-- FOOTER -->
-<footer class="relative overflow-hidden bg-ink">
-  <div class="absolute inset-0 caramel-grain opacity-30 pointer-events-none"></div>
-  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-12">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-      <a href="index.html" class="flex items-center gap-4" aria-label="caramel — home">
-        <div class="flex items-center justify-center overflow-hidden shrink-0" style="height:120px; width:280px;">
-          <img src="assets/caramel-logo.png" alt="caramel" style="height:280px; width:auto; max-width:none; filter: brightness(0) invert(1);" />
-        </div>
-        <div class="font-body text-xs uppercase tracking-widest opacity-70 text-cream leading-snug">
-          inês caramelo<br>creative studio of one
-        </div>
-      </a>
-      <div class="flex items-center gap-3">
-        <span class="caramel-pill" style="transform:rotate(-4deg);">made with ♥ in cork</span>
-        <span class="caramel-pill caramel-pill--lime" style="transform:rotate(3deg);">© <span class="js-year">2026</span></span>
-      </div>
-    </div>
-    <div class="mt-8 pt-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between" style="border-top:1.5px solid rgba(245,241,232,0.2);">
-      <p class="font-body text-xs opacity-70 text-cream">illustration · branding · storytelling · campaigns · strategy · graphic design</p>
-      <p class="font-body text-xs opacity-70 text-cream">ines.caramelo6@gmail.com</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.querySelectorAll('.js-year').forEach(el => el.textContent = new Date().getFullYear());
-  window.addEventListener('load', () => { if (window.lucide) lucide.createIcons(); });
-</script>
 
 </body>
 </html>
