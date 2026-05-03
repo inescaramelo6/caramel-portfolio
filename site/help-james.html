@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help James Find Maria — caramel</title>
+  <meta name="description" content="An interactive Facebook campaign for Cork Airport promoting Lisbon — users followed video clues to solve a suitcase mix-up for a chance to win a trip. 1,040 users, 77% page-like growth, 41.3% website traffic boost." />
+  <link rel="stylesheet" href="styles/caramel.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { cream:'#F5F1E8', lavender:'#D6CFF8', pink:'#ED0086', orange:'#F25823', lime:'#BCDE3F', ink:'#1A1A1A' } } } }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body class="bg-cream text-ink min-h-screen">
+
+<!-- ===========================================================
+     NAV — back button + main nav
+=========================================================== -->
+<nav class="caramel-nav sticky top-0 z-50 w-full">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-3 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-2 shrink-0">
+      <svg width="36" height="36" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+        <g stroke="#1A1A1A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M55 60 q -6 -14, 4 -22 q 8 -6, 10 4 q 2 8 -6 10"/>
+          <path d="M75 50 q -2 -16, 10 -18 q 10 0, 8 12 q -2 8 -10 8"/>
+          <path d="M100 42 q 2 -16, 14 -14 q 12 4, 6 16 q -4 8 -12 6"/>
+          <path d="M130 50 q 8 -14, 18 -8 q 8 6, 0 16 q -6 6 -14 2"/>
+          <path d="M65 100 q 12 -10, 26 0"/><path d="M110 100 q 12 -10, 26 0"/>
+          <path d="M95 120 l 5 -8 l 5 8"/>
+        </g>
+      </svg>
+      <span class="font-marker text-xl text-ink">caramel</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-body text-sm font-medium text-ink">
+      <a href="index.html#work"     class="hover:underline underline-offset-4">work</a>
+      <a href="index.html#about"    class="hover:underline underline-offset-4">about</a>
+      <a href="index.html#services" class="hover:underline underline-offset-4">services</a>
+      <a href="index.html#contact"  class="hover:underline underline-offset-4">contact</a>
+    </div>
+    <a href="index.html" class="caramel-btn caramel-pill caramel-pill--ink shrink-0">
+      <i data-lucide="arrow-left" class="w-3.5 h-3.5" stroke-width="3"></i>
+      back to portfolio
+    </a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB MARQUEE -->
+<div class="overflow-hidden border-y-2 border-ink py-3 bg-lavender text-ink">
+  <div class="flex caramel-marquee-track gap-8 px-4 font-body font-bold uppercase tracking-widest text-sm" style="width: max-content;">
+    <span>case study 04</span><span>★</span><span>help james find maria</span><span>★</span><span>cork airport</span><span>★</span><span>interactive campaign</span><span>★</span><span>filmed in lisbon</span><span>★</span><span>2021</span><span>★</span>
+    <span>case study 04</span><span>★</span><span>help james find maria</span><span>★</span><span>cork airport</span><span>★</span><span>interactive campaign</span><span>★</span><span>filmed in lisbon</span><span>★</span><span>2021</span><span>★</span>
+    <span>case study 04</span><span>★</span><span>help james find maria</span><span>★</span><span>cork airport</span><span>★</span><span>interactive campaign</span><span>★</span><span>filmed in lisbon</span><span>★</span><span>2021</span><span>★</span>
+  </div>
+</div>
+
+<!-- ===========================================================
+     HERO — title, kicker, description, tags
+=========================================================== -->
+<section class="relative overflow-hidden bg-cream">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+
+  <!-- decorative floating elements -->
+  <div class="hidden lg:block absolute top-32 right-12 caramel-spin-slow opacity-90">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="#ED0086"><path d="M12 1 L14.5 8.5 L22 9 L16 14 L18 22 L12 17.5 L6 22 L8 14 L2 9 L9.5 8.5 Z"/></svg>
+  </div>
+  <div class="hidden lg:block absolute bottom-12 left-8 caramel-wiggle opacity-90">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#F25823"><path d="M12 1 L14.5 8.5 L22 9 L16 14 L18 22 L12 17.5 L6 22 L8 14 L2 9 L9.5 8.5 Z"/></svg>
+  </div>
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 pt-10 pb-16 lg:pt-16 lg:pb-24">
+
+    <!-- ← back button at top of content -->
+    <a href="index.html"
+       class="caramel-btn inline-flex items-center gap-2 font-body font-bold uppercase text-xs tracking-widest px-5 py-2.5 rounded-full mb-10"
+       style="background:#1A1A1A; color:#F5F1E8; border:2px solid #1A1A1A; box-shadow:4px 4px 0 #D6CFF8;">
+      <i data-lucide="arrow-left" class="w-3.5 h-3.5" stroke-width="3"></i>
+      back to portfolio
+    </a>
+
+    <!-- handwritten case study label -->
+    <p class="font-hand text-2xl mb-3 text-pink">case study 04 —</p>
+
+    <!-- BIG hero title -->
+    <h1 class="font-display leading-[0.88] mb-5"
+        style="font-size: clamp(2.75rem, 9.5vw, 7.5rem);">
+      Help James<br>
+      Find <span class="text-pink">Maria</span>
+    </h1>
+
+    <!-- KICKER LINE -->
+    <p class="font-marker text-2xl sm:text-3xl mb-8" style="color:#1A1A1A;">
+      Cork Airport · interactive campaign · <span class="text-orange">2021</span>
+    </p>
+
+    <!-- description -->
+    <div class="grid lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-8">
+        <p class="font-serif-i text-2xl sm:text-3xl leading-tight mb-6" style="color:#1A1A1A;">
+          A suitcase mix-up, a stranger in Lisbon, and an audience playing detective.
+        </p>
+        <p class="font-body text-lg sm:text-xl leading-relaxed">
+          I created an <strong>interactive Facebook campaign for Cork Airport</strong>
+          promoting Lisbon as a destination. Users followed video clues to solve a
+          <strong>suitcase mix-up story</strong> for the chance to win a trip to
+          Lisbon. I handled the <strong>concept, scripts, game mechanics</strong>,
+          and travelled to Lisbon to <strong>film on location</strong>.
+        </p>
+
+        <!-- tags -->
+        <div class="mt-8 flex flex-wrap gap-2">
+          <span class="caramel-tag">Concept</span>
+          <span class="caramel-tag">Scripting</span>
+          <span class="caramel-tag">Production</span>
+        </div>
+      </div>
+
+      <!-- side: floating sticker stack -->
+      <div class="lg:col-span-4 flex flex-col gap-3 items-start lg:items-end">
+        <span class="caramel-pill caramel-float" style="transform:rotate(-4deg);">
+          <i data-lucide="plane" class="w-3 h-3"></i> cork → lisbon
+        </span>
+        <span class="caramel-pill caramel-pill--lime caramel-float" style="transform:rotate(5deg); animation-delay:.6s;">
+          <i data-lucide="play" class="w-3 h-3"></i> interactive video
+        </span>
+        <span class="caramel-pill caramel-pill--orange caramel-float" style="transform:rotate(-3deg); animation-delay:1.2s;">
+          filmed on location
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     HERO IMAGE PLACEHOLDER
+=========================================================== -->
+<section class="relative overflow-hidden bg-cream pb-12">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+    <figure class="relative">
+      <span class="caramel-tape caramel-grain" style="background:#BCDE3F; width:140px; top:-16px; left:32px; transform:rotate(-8deg);"></span>
+      <span class="caramel-tape caramel-grain" style="background:#F25823; width:120px; top:-14px; right:48px; transform:rotate(7deg);"></span>
+      <div class="w-full rounded-2xl caramel-block flex items-center justify-center caramel-grain"
+           style="aspect-ratio: 16/9; background:linear-gradient(135deg, #D6CFF8 0%, #ED0086 100%); transform: rotate(-0.6deg);">
+        <div class="text-center text-cream p-8">
+          <p class="font-marker text-3xl mb-2">drop hero shot here</p>
+          <p class="font-body text-sm opacity-80">e.g. campaign cover, Lisbon location still, or Messenger UI</p>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ===========================================================
+     RESULTS — bold stat cards
+=========================================================== -->
+<section class="relative overflow-hidden bg-ink">
+  <div class="absolute inset-0 caramel-grain opacity-30 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
+
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+      <div>
+        <p class="font-hand text-2xl mb-2 text-lime">the receipts —</p>
+        <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] text-cream">
+          the <span class="text-pink">results</span>
+        </h2>
+      </div>
+      <p class="font-body max-w-md text-cream opacity-80">
+        Three numbers that proved interactivity beats a static ad.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+
+      <!-- STAT 01 — 1,040 USERS -->
+      <div class="caramel-card relative rounded-2xl p-6 sm:p-8 caramel-grain"
+           style="background:#ED0086; color:#fff; border:3px solid #F5F1E8; box-shadow:8px 8px 0 #F5F1E8; transform:rotate(-1.5deg);">
+        <div class="flex items-start justify-between mb-6">
+          <span class="caramel-pill caramel-pill--ink" style="box-shadow:2px 2px 0 #F5F1E8;">01</span>
+          <i data-lucide="users" class="w-10 h-10" stroke-width="2.4"></i>
+        </div>
+        <div class="font-display leading-none mb-3" style="font-size: clamp(3.5rem, 8vw, 6rem);">
+          1,040
+        </div>
+        <p class="font-marker text-xl sm:text-2xl mb-2 leading-tight">
+          users in the experience
+        </p>
+        <p class="font-body text-sm uppercase tracking-widest opacity-90">
+          People who actively played the campaign through
+        </p>
+      </div>
+
+      <!-- STAT 02 — 77% PAGE LIKES -->
+      <div class="caramel-card relative rounded-2xl p-6 sm:p-8 caramel-grain"
+           style="background:#BCDE3F; color:#1A1A1A; border:3px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(1.2deg);">
+        <div class="flex items-start justify-between mb-6">
+          <span class="caramel-pill caramel-pill--ink">02</span>
+          <i data-lucide="thumbs-up" class="w-10 h-10" stroke-width="2.4"></i>
+        </div>
+        <div class="font-display leading-none mb-3" style="font-size: clamp(3.5rem, 8vw, 6rem);">
+          +77%
+        </div>
+        <p class="font-marker text-xl sm:text-2xl mb-2 leading-tight">
+          increase in page likes
+        </p>
+        <p class="font-body text-sm uppercase tracking-widest" style="color:#1A1A1A; opacity:.8;">
+          Cork Airport's Facebook community
+        </p>
+      </div>
+
+      <!-- STAT 03 — 41.3% WEBSITE TRAFFIC -->
+      <div class="caramel-card relative rounded-2xl p-6 sm:p-8 caramel-grain"
+           style="background:#F25823; color:#fff; border:3px solid #F5F1E8; box-shadow:8px 8px 0 #F5F1E8; transform:rotate(-0.8deg);">
+        <div class="flex items-start justify-between mb-6">
+          <span class="caramel-pill caramel-pill--ink" style="box-shadow:2px 2px 0 #F5F1E8;">03</span>
+          <i data-lucide="trending-up" class="w-10 h-10" stroke-width="2.4"></i>
+        </div>
+        <div class="font-display leading-none mb-3" style="font-size: clamp(3.5rem, 8vw, 6rem);">
+          +41.3%
+        </div>
+        <p class="font-marker text-xl sm:text-2xl mb-2 leading-tight">
+          boost in website traffic
+        </p>
+        <p class="font-body text-sm uppercase tracking-widest opacity-90">
+          Driven from the campaign back to corkairport.com
+        </p>
+      </div>
+
+    </div>
+
+    <!-- pull quote under stats -->
+    <p class="mt-12 font-serif-i text-2xl sm:text-3xl text-cream max-w-3xl">
+      "A campaign people actually wanted to watch — and play — to the end."
+    </p>
+  </div>
+</section>
+
+<!-- ===========================================================
+     THE BRIEF
+=========================================================== -->
+<section class="relative overflow-hidden bg-orange">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <p class="font-hand text-2xl mb-2 text-cream">01 —</p>
+        <h2 class="font-marker text-5xl sm:text-6xl text-cream">the brief</h2>
+      </div>
+      <div class="lg:col-span-8 space-y-4 font-body text-lg text-cream">
+        <p>
+          Cork Airport wanted to push Lisbon as the must-book route — but
+          competing on price alone wouldn't cut it. The ask: build something more
+          than a static ad. Make people <em>play</em>.
+        </p>
+        <p>
+          So we built a story. A suitcase mix-up. A traveller named James trying
+          to find a stranger named Maria across Lisbon, dropping clues in short
+          videos on Facebook. The audience helped solve it — and the prize was a
+          real trip.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     WHAT I DID
+=========================================================== -->
+<section class="relative overflow-hidden bg-cream">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <p class="font-hand text-2xl mb-2 text-orange">02 —</p>
+        <h2 class="font-marker text-5xl sm:text-6xl">what I did</h2>
+      </div>
+      <div class="lg:col-span-8">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#D6CFF8; transform:rotate(-1deg);">
+            <h3 class="font-marker text-2xl mb-2">Concept &amp; story</h3>
+            <p class="font-body text-sm">Built the suitcase-mix-up premise, mapped out the story arc, and designed the clue-by-clue path to the reveal.</p>
+          </div>
+          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#BCDE3F; transform:rotate(1.2deg);">
+            <h3 class="font-marker text-2xl mb-2">Scripts &amp; game mechanics</h3>
+            <p class="font-body text-sm">Wrote each video instalment, designed the participation mechanics on Facebook, and the prize-redemption flow.</p>
+          </div>
+          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#ED0086; color:#fff; transform:rotate(1.5deg);">
+            <h3 class="font-marker text-2xl mb-2">On-location production</h3>
+            <p class="font-body text-sm">Travelled to Lisbon and filmed across the city — Praça do Comércio, Sintra, Belém, the Alfama backstreets — directing each shoot day.</p>
+          </div>
+          <div class="caramel-card rounded-2xl p-5 caramel-grain caramel-block--small" style="background:#F25823; color:#fff; transform:rotate(-1.8deg);">
+            <h3 class="font-marker text-2xl mb-2">Edit &amp; rollout</h3>
+            <p class="font-body text-sm">Cut the episodes, scheduled the drops, and tuned the comments-led detective work as the campaign played out live.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     GALLERY (placeholders)
+=========================================================== -->
+<section class="relative overflow-hidden bg-cream">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 pb-20 lg:pb-28">
+    <div class="flex items-end gap-3 mb-10">
+      <h2 class="font-marker text-4xl sm:text-5xl">campaign moments</h2>
+      <svg width="100" height="20" viewBox="0 0 200 20" fill="none">
+        <path d="M2 10 Q 12 2, 22 10 T 42 10 T 62 10 T 82 10 T 102 10 T 122 10 T 142 10 T 162 10 T 182 10 T 198 10"
+              stroke="#ED0086" stroke-width="4" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+      <figure class="relative" style="transform:rotate(-3deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#BCDE3F; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <div class="w-full h-44 sm:h-48 rounded-sm flex items-center justify-center caramel-grain text-cream font-marker text-sm text-center" style="background:#ED0086;">campaign cover</div>
+          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">drop image here</figcaption>
+        </div>
+      </figure>
+      <figure class="relative" style="transform:rotate(2.5deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#D6CFF8; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <div class="w-full h-44 sm:h-48 rounded-sm flex items-center justify-center caramel-grain text-ink font-marker text-sm text-center" style="background:#BCDE3F;">video still 01</div>
+          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">drop image here</figcaption>
+        </div>
+      </figure>
+      <figure class="relative" style="transform:rotate(-1.5deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#F25823; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <div class="w-full h-44 sm:h-48 rounded-sm flex items-center justify-center caramel-grain text-ink font-marker text-sm text-center" style="background:#D6CFF8;">video still 02</div>
+          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">drop image here</figcaption>
+        </div>
+      </figure>
+      <figure class="relative" style="transform:rotate(3deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#BCDE3F; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <div class="w-full h-44 sm:h-48 rounded-sm flex items-center justify-center caramel-grain text-cream font-marker text-sm text-center" style="background:#F25823;">behind the scenes</div>
+          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">drop image here</figcaption>
+        </div>
+      </figure>
+      <figure class="relative" style="transform:rotate(-2deg);">
+        <span class="absolute z-10 caramel-grain pointer-events-none" style="background:#D6CFF8; width:70px; height:20px; top:-10px; left:50%; transform:translateX(-50%) rotate(-4deg); box-shadow:0 1px 3px rgba(0,0,0,.15); opacity:.92;"></span>
+        <div class="rounded-md caramel-block--small" style="background:#F5F1E8; padding:6px;">
+          <div class="w-full h-44 sm:h-48 rounded-sm flex items-center justify-center caramel-grain text-ink font-marker text-sm text-center" style="background:#BCDE3F;">prize moment</div>
+          <figcaption class="font-body text-[11px] uppercase tracking-wide mt-2 px-1 pb-1 leading-tight">drop image here</figcaption>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     UP NEXT
+=========================================================== -->
+<section class="relative overflow-hidden bg-cream">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-24">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+      <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl">up <span class="text-pink">next</span></h2>
+      <a href="index.html#work" class="font-body text-sm uppercase tracking-widest hover:underline underline-offset-4">all work →</a>
+    </div>
+    <a href="gosh-copenhagen.html" class="caramel-card relative rounded-2xl overflow-hidden block"
+       style="background:#F25823; border:2.5px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(-0.6deg);">
+      <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+      <div class="relative p-6 sm:p-8 flex items-center justify-between gap-4">
+        <div>
+          <p class="font-body text-xs uppercase tracking-widest mb-2 opacity-80">case study 05 — illustrated content</p>
+          <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl">GOSH Copenhagen</h3>
+        </div>
+        <span class="caramel-pill caramel-pill--ink shrink-0">
+          read it
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===========================================================
+     FOOTER
+=========================================================== -->
+<footer class="relative overflow-hidden bg-ink">
+  <div class="absolute inset-0 caramel-grain opacity-30 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-12">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <svg width="48" height="48" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+          <g stroke="#F5F1E8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M55 60 q -6 -14, 4 -22 q 8 -6, 10 4 q 2 8 -6 10"/>
+            <path d="M75 50 q -2 -16, 10 -18 q 10 0, 8 12 q -2 8 -10 8"/>
+            <path d="M100 42 q 2 -16, 14 -14 q 12 4, 6 16 q -4 8 -12 6"/>
+            <path d="M130 50 q 8 -14, 18 -8 q 8 6, 0 16 q -6 6 -14 2"/>
+            <path d="M65 100 q 12 -10, 26 0"/><path d="M110 100 q 12 -10, 26 0"/>
+            <path d="M95 120 l 5 -8 l 5 8"/>
+          </g>
+        </svg>
+        <div>
+          <div class="font-marker text-2xl text-cream">caramel</div>
+          <div class="font-body text-xs uppercase tracking-widest opacity-70 text-cream">inês caramelo · creative studio of one</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="caramel-pill" style="transform:rotate(-4deg);">made with ♥ in cork</span>
+        <span class="caramel-pill caramel-pill--lime" style="transform:rotate(3deg);">© <span class="js-year">2026</span></span>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between" style="border-top:1.5px solid rgba(245,241,232,0.2);">
+      <p class="font-body text-xs opacity-70 text-cream">illustration · branding · storytelling · campaigns · strategy · graphic design</p>
+      <p class="font-body text-xs opacity-70 text-cream">ines.caramelo6@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.js-year').forEach(el => el.textContent = new Date().getFullYear());
+  window.addEventListener('load', () => { if (window.lucide) lucide.createIcons(); });
+</script>
+
+</body>
+</html>
